@@ -24,7 +24,7 @@ import config from './config/config';
           database: dbConfig.name,
           entities: [Contact],
           ssl: {
-            rejectUnauthorized: false,
+            ca: dbConfig.ca,
           },
           synchronize: true,
         };

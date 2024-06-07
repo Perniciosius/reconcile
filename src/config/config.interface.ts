@@ -9,4 +9,5 @@ interface DbConfig {
   user: string;
   password: string;
   name: string;
+  ca: string;
 }
