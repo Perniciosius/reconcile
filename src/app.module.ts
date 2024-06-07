@@ -23,6 +23,9 @@ import config from './config/config';
           password: dbConfig.password,
           database: dbConfig.name,
           entities: [Contact],
+          ssl: {
+            rejectUnauthorized: false,
+          },
           synchronize: true,
         };
       },
